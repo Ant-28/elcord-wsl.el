@@ -13,7 +13,7 @@
 (defvar elcord-wsl--ignored-buffers '("Minibuf")
   "The buffers that will not be displayed in the Rich Presence.")
 
-(defvar elcord-wsl--load-path nil
+(defvar elcord-wsl--load-path "~/.emacs.d/elcord"
   "The path where elcord-wsl files are located.")
 
 (defvar elcord-wsl--node-path "/mnt/c/Program Files/nodejs/node.exe"
