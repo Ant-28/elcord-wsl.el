@@ -7,7 +7,7 @@
 (defvar elcord-wsl--assets-alist '(("_default" . "_default"))
   "The rich presence assets used for each buffer name.")
 
-(defvar elcord-wsl--client-id "698809287564328991"
+(defvar elcord-wsl--client-id "1142538514777526392"
   "The client ID of the application for Rich Presence.")
 
 (defvar elcord-wsl--ignored-buffers '("Minibuf")

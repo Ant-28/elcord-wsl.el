@@ -4,6 +4,9 @@ const path = require("path");
 
 const configPath = path.resolve(__dirname, "./config.json");
 const { assets, clientId } = readConfig();
+console.log("Assets:\n");
+console.log(assets);
+
 const extensions = Object.keys(assets);
 
 const client = new RPC.Client({ transport: "ipc" });
@@ -32,6 +35,8 @@ function updateActivity(client) {
   });
 
   const largeImageKey = assets[e] || assets["_default"];
+//  console.log(largeImageKey);
+//  const largeImageKey = "cpp"
   const startTimestamp = new Date();
   client.setActivity({ details, state, startTimestamp, largeImageKey, largeImageText });
 }
